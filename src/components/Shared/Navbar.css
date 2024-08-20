@@ -1,0 +1,103 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    font-family: 'Kanit';
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    color: #242424;
+    gap: 20px;
+}
+
+
+.navbar .actions i {
+    padding: 20px;
+}
+
+.navbar .sideBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #242424;
+    color: white;
+    padding: 25px;
+    z-index: 4;
+    font-size: 2rem;
+    border-right: 5px solid wheat;
+}
+
+.navbar .sideBar i {
+    color: white;
+}
+
+.navbar .sideBar li {
+    padding: 40px 0px 40px 0px;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.menu-toggle-checkbox {
+    display: none; /* Menyembunyikan checkbox */
+}
+
+.sideBar {
+    display: none; /* Menyembunyikan sidebar secara default */
+}
+
+.menu-toggle-checkbox:checked + .sideBar {
+    display: block; /* Menampilkan sidebar ketika checkbox di-toggle */
+}
+
+.menu-toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 10px;
+    display: none;
+}
+
+.menu-toggle-button:focus {
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle-button {
+        display: block;
+    }
+    .actions {
+        display: none;
+    }
+    .navbar .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar{
+        padding: 20px;
+    }
+}

@@ -1,0 +1,70 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: #c0aa83 ;
+    padding: 100px;
+    font-family: 'Kanit';
+    border-top: 2px solid whitesmoke;
+}
+.footer .left p {
+    width: 80%;
+}
+
+.footer .left .iconFooter {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.left, .right {
+    flex-grow: 1;
+    align-items: flex-start;
+}
+  
+.right {
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;
+}
+
+.right p:first-child {
+    font-weight: 900;
+}
+
+.right input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Kanit';
+}
+
+.subscribeButton {
+	box-shadow:inset 0px 1px 0px 0px #a6827e;
+	background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+	background-color:#7d5d3b;
+	border-radius:3px;
+	border:1px solid #54381e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:'Kanit';
+	font-size:1.2rem;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534;
+}
+.subscribeButton:hover {
+	background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+	background-color:#634b30;
+}
+.subscribeButton:active {
+	position:relative;
+	top:1px;
+}
+
+@media (max-width: 480px) {
+    .footer{
+        padding: 20px;
+    }
+}

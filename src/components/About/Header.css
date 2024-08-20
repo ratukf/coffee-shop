@@ -1,0 +1,41 @@
+.about {
+    background-image: url('/public/images/about-coffeeshop.jpg');
+    background-size: cover;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    padding: 300px 100px 300px 100px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Warna hitam dengan transparansi 50% */
+}
+
+.about .about-title {
+    font-family: 'Kanit';
+    z-index: 2;
+    color: white;
+    max-width: 60%;
+}
+
+.about .about-title h2 {
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.about .about-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 480px) {
+    .about{
+        padding: 20px;
+    }
+}

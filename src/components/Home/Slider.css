@@ -1,0 +1,68 @@
+.slide-container {
+    padding: 0px 100px 100px 100px;
+    background-color: #c0aa83;
+    font-family: 'Kanit';
+    height: 100vh;
+  }
+  
+  /* Combined styles for slide-content and img */
+  .slide-content-and-image {
+    display: flex; /* Make them side-by-side */
+    align-items: center; /* Align content vertically */
+    width: 100%; /* Ensure combined elements fill the width */
+  }
+  
+  .slide-content {
+    flex: 1; /* Make content take up remaining space after image */
+    padding: 20px; /* Add some padding for better separation */
+  }
+  
+  .slide-content .heading1 {
+    font-size: 4rem;
+  }
+  
+  .slide-content .heading2 {
+    font-size: 2.5rem;
+  }
+  
+  .slide-container img {
+    max-width: 50%; /* Maintain image size as desired */
+    object-fit: cover; /* Ensure image fills its container while maintaining aspect ratio */
+  }
+
+@media (max-width: 768px) {
+    .slide-content-and-image {
+        display: flex;
+        flex-direction: column; /* Mengubah arah menjadi kolom */
+        align-items: center; /* Menjaga elemen terpusat secara vertikal */
+        width: 100%; /* Menjaga lebar penuh */
+    }
+
+    .slide-container .slide-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+  .slide-content .heading1 {
+    font-size: 2.5rem;
+  }
+
+  .slide-content .heading2 {
+    font-size: 2rem;
+  }
+
+  .slide-container {
+    padding: 0;
+    background-color: #c0aa83;
+    font-family: 'Kanit';
+    height: 100vh;
+  }
+
+  .slide-container img {
+    max-width: 100%;
+  }
+}

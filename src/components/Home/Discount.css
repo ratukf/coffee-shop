@@ -1,0 +1,71 @@
+.home-discount {
+    background-image: url('/public/images/home-indonesia.png'); 
+    background-size: cover;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Kanit";
+}
+/* 
+.home-discount-text {
+    width: 50%;
+} */
+
+.home-discount-text h2 , .home-discount-image #discountedPrice {
+    background: linear-gradient(90deg, #000000 0%, #B10808 6%, #F8EFFD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 5rem;
+    text-shadow: 5px 5px #242424;
+}
+
+.home-discount-text p {
+    font-size: 2rem;
+}
+
+.home-discount-text p #note {
+    font-size: 0.9rem;
+}
+
+.home-discount-image {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-discount-image p {
+    font-weight: 800;
+    font-size: 2rem;
+    color: #242424;
+}
+
+.home-discount-image s {
+    font-weight: 900;
+    font-size: 3rem;
+    color: #242424;
+}
+
+@media (max-width: 768px) {
+    .home-discount {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .home-discount-text h2 {
+        font-size: 3.5rem;
+    }
+
+    .home-discount-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-discount-image {
+        max-width: 100%;
+    }
+}
